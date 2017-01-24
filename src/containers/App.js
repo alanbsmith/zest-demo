@@ -40,7 +40,7 @@ class App extends Component {
               <pre>
               {`import React, { Component, PropTypes } from ‘react’;`}{'\n'}
               {`...`}{'\n'}
-              <span className="highlight">{`import Zest from ‘react-zest’`}</span>{'\n'}
+              <span className="highlight">{`import Zest from ‘react-zest’;`}</span>{'\n'}
               {'\n'}
               {'\n'}
               {`class MyComponent extends Component {`}{'\n'}
@@ -58,7 +58,7 @@ class App extends Component {
                 {}  {`render() {`}{'\n'}
                 {}    {`return ( `}{'\n'}
                 {}      <span className="highlight">{`<Zest>`}</span>{'\n'}
-                {}        {`<button>Click Here!</button> `}{'\n'}
+                {}        {`<button>Animate!</button> `}{'\n'}
                 {}      <span className="highlight">{`</Zest>`}</span>{'\n'}
                 {}    {`)`} {'\n'}
                 {}  {`}`}{'\n'}
