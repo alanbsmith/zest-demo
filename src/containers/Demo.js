@@ -13,21 +13,14 @@ class Demo extends Component {
     };
   }
 
-  componentDidMount() {
-    console.log('didMount');
-  }
-
-  componentDidUpdate() {
-    console.log('componentDidUpdate');
-  }
-
-  componentWillUpdate(nextProps, nextState) {
-    console.log(nextState);
-  }
-
   render() {
     return (
-      <div>
+      <div className="demo">
+        <div className="demo__title">Preset Triggers</div>
+        <div className="demo__description">
+          This is an example of our preset triggers. You can have an animation fire on 'hover' or 'click' events.
+          You can also choose from the three available animations, ('beacon', 'pulse', and 'wiggle'), and toggle their durations.
+        </div>
         <div className="demo__form">
           <label className="demo__form__label">Animation Name</label>
           <select className="demo__form__input" defaultValue={this.state.animationName} onChange={e => this.setState({ animationName: e.target.value })} >

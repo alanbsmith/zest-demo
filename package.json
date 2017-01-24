@@ -72,7 +72,8 @@
     "react-router-redux": "^4.0.5",
     "react-zest": "^0.2.2",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "webpack": "^1.13.2"
   },
   "scripts": {
     "start": "node scripts/start.js",

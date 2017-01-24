@@ -16,7 +16,6 @@ class PulseDemo extends Component {
   }
 
   validateInput() {
-    console.log('on blur!');
     if (this.state.input.length < 3) { return this.setState({ valid: false }); }
     return this.setState({ valid: true });
   }
@@ -29,7 +28,13 @@ class PulseDemo extends Component {
 
   render() {
     return (
-      <div>
+      <div className="demo">
+        <div className="demo__title">Custom Trigger</div>
+        <div className="demo__description">
+          This is an example of a custom trigger. You can have an animation fire based on an external attribute returning `true`.
+          For this particular example, if the text length less than three characters, the 'pulse' animation will be triggered.
+          The validation occurs `onBlur` (when you click away from the input).
+        </div>
         <div className="demo__form">
           <label className="demo__form__label">Animation Name</label>
           <select className="demo__form__input" disabled defaultValue={this.state.animationName} onChange={e => this.setState({ animationName: e.target.value })} >
@@ -51,6 +56,7 @@ class PulseDemo extends Component {
             <input
               className="demo__rendering__input"
               type="text"
+              placeholder="add some text"
               value={this.state.input}
               onChange={e => this.setState({ input: e.target.value })}
               onBlur={() => this.validateInput()}

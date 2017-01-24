@@ -9,7 +9,7 @@ html {
   body {
     color: $black;
     font-family: 'Fira Sans', verdana, arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     height: 100%;
     margin: 0;
@@ -103,6 +103,22 @@ html {
   padding: 10px 20px;
 }
 
+.demo {
+  @include span-columns(12);
+}
+
+.demo__title {
+  color: $black;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0px;
+  text-transform: uppercase;
+}
+
+.demo__description {
+  margin-bottom: 40px;
+}
+
 .demo__form {
   @include span-columns(6);
   margin-bottom: 80px;
@@ -153,10 +169,13 @@ html {
 }
 
 .demo__rendering__input {
-  border: 1px solid black;
+  outline: none;
+  border: 1px solid $dark-snow;
+  border-radius: 4px;
   font-size: 14px;
   margin-right: 10px;
   padding: 10px;
+  width: 80%;
 }
 
 .footer {

@@ -100,9 +100,6 @@ class App extends Component {
           </div>
           <div className="section">
             <div className="section__header">Demo</div>
-            <div className="section__text">
-              We've added a little playground to toggle animations and triggers to help you get a feel for the animations. Have fun!
-            </div>
             <Demo />
             <PulseDemo />
           </div>
