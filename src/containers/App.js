@@ -78,7 +78,7 @@ class App extends Component {
                 {}      <span className="highlight">{`animationTrigger=“click”`}</span>{'\n'}
                 {}      <span className="highlight">{`animationDuration={400}`}</span>{'\n'}
                 {}    {`>`}{'\n'} 
-                {}      {`<button>Click Here!</button> `}{'\n'}
+                {}      {`<button>Animate!</button> `}{'\n'}
                 {}    {`</Zest>`}{'\n'}
                 {}  {`);`}{'\n'}
                 {`}`}{'\n'}
